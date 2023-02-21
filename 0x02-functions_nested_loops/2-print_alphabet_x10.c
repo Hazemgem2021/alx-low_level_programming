@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_-func
+ * print_alphabet_x10 - func with nested while .
  *
  * return -0
  */
