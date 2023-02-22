@@ -4,6 +4,7 @@
  *
  * Return: returns nothing
  */
+
 void times_table(void)
 {
 int digit, mult, result;
@@ -26,5 +27,9 @@ _putchar((result % 10) + '0');
 _putchar('\n');
 }
 }
-
+int main(void)
+{
+	times_table();
+	return (0);
+}
 
