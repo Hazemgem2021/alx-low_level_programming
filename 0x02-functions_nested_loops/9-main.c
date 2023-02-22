@@ -5,8 +5,9 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-   	time_teble();
-	return(0);
+time_teble();
+return (0);
 }
