@@ -5,7 +5,7 @@
  * Return: returns nothing
  */
 
-void times_table(void)
+void times_teble(void)
 {
 int digit, mult, result;
 for (digit = 0; digit <= 9; digit++)
@@ -29,7 +29,7 @@ _putchar('\n');
 }
 int main(void)
 {
-	times_table();
+	times_teble();
 	return (0);
 }
 
