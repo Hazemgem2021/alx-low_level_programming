@@ -1,1 +1,1 @@
-C low programming first tasks will be added
+0x05. C - Pointers, arrays and strings
