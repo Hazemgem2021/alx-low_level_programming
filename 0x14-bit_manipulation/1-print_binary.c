@@ -1,22 +1,28 @@
 #include "main.h"
 
 /**
- * print_binary - prints the binary representation
- * of a number.
- * @n: unsigned long int.
- *
- * Return: no return.
+ * print_binary - print binary representation of a number
+ * @n: decimal number to print as binary
  */
 void print_binary(unsigned long int n)
 {
-	if (d >> 0)
+	unsigned long int head;
+	int rounds;
+
+	if (n == 0)
 	{
-		if (d >> 1)
-			print_binary(d >> 1);
-		_putchar((d & 1) + '0');
+		printf("0");
+		return;
 	}
-	else
+
+	for (head = n, rounds = 0; (head >>= 1) > 0; rounds++)
+		;
+
+	for (; rounds >= 0; rounds--)
 	{
-		_putchar('0');
+		if ((n >> rounds) & 1)
+			printf("1");
+		else
+			printf("0");
 	}
 }
