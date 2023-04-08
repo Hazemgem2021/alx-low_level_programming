@@ -1,28 +1,26 @@
 #include "main.h"
 
 /**
- * print_binary - print binary representation of a number
- * @n: decimal number to print as binary
+ * print_binary - prints the binary represent of a decimal number
+ * @n: number to print in binary
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int head;
-	int rounds;
+	int d, count = 0;
+	unsigned long int current;
 
-	if (n == 0)
+	for (d = 63; d >= 0; d--)
 	{
-		printf("0");
-		return;
-	}
+		current = n >> d;
 
-	for (head = n, rounds = 0; (head >>= 1) > 0; rounds++)
-		;
-
-	for (; rounds >= 0; rounds--)
-	{
-		if ((n >> rounds) & 1)
-			printf("1");
-		else
-			printf("0");
+		if (current & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
 	}
+	if (!count)
+		_putchar('0');
 }
