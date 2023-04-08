@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int d;
-	unsigned int decml_val = 0;
+	unsigned int frac_val = 0;
 
 	if (!b)
 		return (0);
@@ -17,8 +17,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[d] < '0' || b[d] > '1')
 			return (0);
-		decml_val = 2 * decml_val + (b[d] - '0');
+		frac_val = 2 * frac_val + (b[d] - '0');
 	}
 
-	return (decml_val);
+	return (frac_val);
 }
